@@ -34,15 +34,10 @@ tesseract --list-langs
 If `eng`(and `Latin` or `script-latn`) appears, you're all good homie. If not, install the missing language packages.
 
 ### Launch into your Conda environment 
-If you have used Jupyter Notebook, try using the Conda Environment you used when using Jupyter.
-How can you find the name of the environment if forgotten? You may wonder. Don't worry.
-
-Just type
+Create a Conda environment. Enter a name of your choosing.
 ``` bash
-conda info --envs
+conda create -n <name-of-environment> python=3.10 -y
 ```
-
-The names should pop up.
 
 Launch into the environment
 ``` bash
@@ -50,6 +45,10 @@ conda activate <name-of-environment>
 ```
 
 ### Install necessary packages in the environment
+Pytorch with CUDA runtime (12.1).
+``` bash
+conda install -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda=12.1 -y
+```
 
 ``` bash
 conda install -c conda-forge numpy pillow matplotlib scikit-image pandas jupyterlab notebook ipywidgets opencv pytesseract -y
