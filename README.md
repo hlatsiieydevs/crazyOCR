@@ -11,7 +11,7 @@ Jupyter Notebook
 ### Install required packages
 Update local repository
 ``` bash
-sudo apt update
+sudo apt update && sudo apt upgrade
 ```
 
 Install required packages
@@ -45,16 +45,11 @@ conda activate <name-of-environment>
 ```
 
 ### Install necessary packages in the environment
-Pytorch with CUDA runtime (12.1).
+Pytorch with CUDA runtime.
 ``` bash
-conda install -c pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda=12.1 -y
+conda install -c conda-forge pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda -y
 ```
 
 ``` bash
-conda install -c conda-forge numpy pillow matplotlib scikit-image pandas jupyterlab notebook ipywidgets opencv pytesseract -y
-```
-
-Transformers / TrOCR (neural OCR)
-```bash
-pip install transformers accelerate bitsandbytes sentencepiece easyocr
+conda install -c conda-forge pytorch torchvision torchaudio opencv pillow matplotlib numpy pytesseract
 ```
