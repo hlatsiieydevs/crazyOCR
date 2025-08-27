@@ -45,3 +45,16 @@ conda activate <name-of-environment>
 ``` bash
 conda install -c conda-forge pytorch torchvision torchaudio nvidia pytorch-cuda opencv pillow matplotlib numpy pytesseract notebook -y
 ```
+
+## How to Use
+### Loading the images
+For the best results, make sure your scans are high quality (+300 dpi) and that it is a single page. The more preprocessed the image, the better the chances of a good result.
+
+For books, create a folder in `data/raw` with the name of your book (e.g. Demonstration_Works)
+(e.g. `data/raw/Demonstration_Works`)
+
+Rename the individual images to the following format, `Demonstration_Works_1.png`, `Demonstration_Works_2.png` and so forth. You can make use of Bulk Rename Utility on Windows or IfranView to achieve this process without wasting time.
+
+Run Jupyter Notebook and open the `crazyOCR.iypnb`, do tweak the parameter in Cell #2 to your preference thereafter click on `Restart Kernal and Run All Cells`.
+
+ 
