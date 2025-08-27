@@ -45,11 +45,6 @@ conda activate <name-of-environment>
 ```
 
 ### Install necessary packages in the environment
-Pytorch with CUDA runtime.
 ``` bash
-conda install -c conda-forge pytorch -c nvidia pytorch torchvision torchaudio pytorch-cuda -y
-```
-
-``` bash
-conda install -c conda-forge pytorch torchvision torchaudio opencv pillow matplotlib numpy pytesseract
+conda install -c conda-forge pytorch torchvision torchaudio nvidia pytorch-cuda opencv pillow matplotlib numpy pytesseract -y
 ```
