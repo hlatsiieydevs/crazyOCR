@@ -2,10 +2,7 @@
 This is simply a mini project that I am working on that aims to digitise scanned documents into text files effectively and efficiently.
 
 ## Prerequisites
-A system with Ubuntu
-Anaconda
-GPU drivers
-Jupyter Notebook
+A system with Ubuntu and Anaconda preinstalled
 
 ## Setup
 ### Install required packages
@@ -46,5 +43,5 @@ conda activate <name-of-environment>
 
 ### Install necessary packages in the environment
 ``` bash
-conda install -c conda-forge pytorch torchvision torchaudio nvidia pytorch-cuda opencv pillow matplotlib numpy pytesseract -y
+conda install -c conda-forge pytorch torchvision torchaudio nvidia pytorch-cuda opencv pillow matplotlib numpy pytesseract notebook -y
 ```
