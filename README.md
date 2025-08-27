@@ -1,4 +1,4 @@
-# OCR Overclocked
+# crazyOCR
 This is simply a mini project that I am working on that aims to digitise scanned documents into text files effectively and efficiently.
 
 ## Prerequisites
