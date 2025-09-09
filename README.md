@@ -46,6 +46,11 @@ conda activate <name-of-environment>
 conda install -c conda-forge pytorch torchvision torchaudio nvidia pytorch-cuda opencv pillow matplotlib numpy pytesseract notebook -y
 ```
 
+### For crazyOCR v2.0
+```bash
+pip install psutils
+```
+
 ## How to Use
 ### Loading the images
 For the best results, make sure your scans are high quality (+300 dpi) and that it is a single page. The more preprocessed the image, the better the chances of a good result.
